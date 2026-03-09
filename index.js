@@ -5,7 +5,7 @@ let errorTime;
 let resultTime;
 function updateResults() {
   if (inputEl.value <= 0 || isNaN(inputEl.value)) {
-    errorEl.innerText = "Please enter a valid number!";
+    errorEl.innerText = "Entre com um número válido:";
     clearTimeout(errorTime);
     errorTime = setTimeout(() => {
       errorEl.innerText = "";
